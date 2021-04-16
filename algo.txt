@@ -1,0 +1,33 @@
+ALGORITHM  Test	
+Var 
+I : integer :=0;
+Nbc : integer :=0;
+Nbm : integer :=0;
+Nbv : integer :=0;
+CH:string;
+BEGIN
+write (' donner un chaine de caractère');
+read (CH);
+	
+WHILE CH[i] <>  ‘.’;
+nbc := nbc +1;
+i:=i+1;
+END_WHILE 
+WRITE (nbc);
+FOR  I FROM 1 to  CH.length DO
+if CH[i]='a'or if CH[i]='e'or if CH[i]='i'or if CH[i]='o'or if CH[i]='u'or if CH[i]='y'then
+nbv:=nbv+1;
+END_if
+WRITE (nbv);
+END_FOR
+REPEAT	
+IF CH[i] <> ‘ ‘ then 
+  i:=i+1
+else if CH[i]= ‘ ‘ then
+nbm := nbm+1;
+i:=i+1;
+UNTIL ( I > length(CH) )
+WRITE (nbm);
+
+END.
+
